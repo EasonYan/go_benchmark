@@ -1,0 +1,17 @@
+syntax = "proto3";
+option go_package = "github.com/EasonYan/go_benchmark/pb";
+
+message UserProfile {
+  int32 age = 1;
+  string gender = 2;
+  string province = 3;
+  string city = 4;
+  string network = 5;
+  repeated string last_login_ip = 6;
+  repeated Tag tag_weigt = 7;
+}
+
+message Tag {
+  string name = 1;
+  double weight = 2;
+}
